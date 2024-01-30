@@ -1,5 +1,35 @@
+@font-face {
+    font-family: "noto sans JP";
+    src: url("../fonts/NotoSansJP-Black.ttf") format("truetype");
+    font-weight: black;
+}
+
+@font-face {
+    font-family: "noto sans JP";
+    src: url("../fonts/NotoSansJP-ExtraBold.ttf") format("truetype");
+    font-weight: extraBold;
+}
+
+@font-face {
+    font-family: "noto sans JP";
+    src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "noto sans JP";
+    src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "noto sans JP";
+    src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
+    font-weight: regular;
+}
+
 * {
-    font-family: "Noto Sans JP";
+    font-family: "Noto Sans JP" sans-serif;
 }
 
 header {
@@ -676,8 +706,8 @@ footer {
     .purchaseList-content {
         display: grid;
         justify-content: center;
-        grid-template-columns: 40% 40%;
-        gap: 30px;
+        grid-template-columns: 42% 42%;
+        gap: 28px;
         margin: auto;
         margin-top: 36px;
     }
