@@ -1,0 +1,656 @@
+* {
+    font-family: "Noto Sans JP";
+}
+
+header {
+    padding: 30px 20px 17px 20px;
+    height: 90px;
+    background-color: #AD0000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 80px;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-r-inner {
+    width: 185px;
+}
+
+.header-r-inner img {
+    width: 100%;
+}
+
+.pc-inner {
+    width: 520px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.kv img{
+    width: 100%;
+}
+
+.banner-item img {
+    width: 100%;
+}
+
+.banner-03-button {
+    width: 100%;
+    height: 60px;
+    border: 2px solid #333;
+    background: linear-gradient(89deg, #FFD600 0%, #FFF4BB 18.66%, #FFE03F 43.23%, #FFD600 65.1%, #F6CA2E 100%);
+    box-shadow: 0px 4px 4px 0px #D8D0BD;
+    color: #333;
+
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+/*CTA*/
+
+.cta {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.tel-button {
+    position: relative;
+    width: 86%;
+}
+
+.tel-button img {
+    width: 100%;
+}
+
+/*キラッと光る*/
+.tel-button::before {
+    content: '';
+    /*絶対配置でキラッと光るの位置を決める*/
+    position: absolute;
+    top: 0;
+    left: -75%;
+    /*キラッと光る形状*/
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    transform: skewX(-25deg);
+}
+
+/*hoverした際の移動のアニメーション*/
+.tel-button:hover::before {
+    animation: shine 0.7s;
+}
+
+.footer-fixation::before {
+    content: '';
+    /*絶対配置でキラッと光るの位置を決める*/
+    position: absolute;
+    top: 20%;
+    left: -75%;
+    /*キラッと光る形状*/
+    width: 50%;
+    height: 80%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    transform: skewX(-25deg);
+}
+
+.footer-fixation:hover::before {
+    animation: shine 0.7s;
+}
+
+@keyframes shine {
+    100% {
+      left: 125%;
+    }
+}
+
+
+.present-cta {
+    width: 100%;
+}
+
+
+/*買取品目*/
+.purchaseList-sec {
+    color: #FFF;
+    background: #003064;
+    padding: 50px 0;
+}
+
+
+.purchaseList-sec h2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding-bottom: 3px;
+}
+
+.purchaseList-sec h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    height: 4px;
+    width: 100px;
+    background: #FFF;
+}
+
+.purchaseList-content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 160px 160px;
+    gap: 30px;
+    margin: auto;
+    margin-top: 36px;
+}
+
+.purchaseList-item-image {
+    width: 160px;
+}
+
+.purchaseList-item-image img {
+    width: 100%;
+}
+
+.purchaseList-item-text {
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 8px;
+}
+
+.purchaseList-item-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #F1DB00 0%, #FFBC00 33.33%, #FFFFB1 66.67%, #FB0 100%);;
+    height: 2px;
+    width: 32px;
+}
+
+.purchaseList-item-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #FFF;
+    height: 2px;
+    width: 160px;
+}
+
+/*買取実績*/
+.purchaseAchievements-sec {
+    
+}
+
+.full-images {
+    width: 100%;
+}
+
+.on-sitePurchase-sec {
+    background-color: #F0F0E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.on-sitePurchase-sec h2 {
+    margin-top: 50px;
+}
+
+.on-sitePurchase-sec .question, .liquidation-sec .question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 18px auto 30px auto;
+}
+
+.on-sitePurchase-sec .question-headline {
+    text-align: center;
+}
+
+.question-headline {
+    color: #333;
+
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 166.667% */
+    margin-bottom: 20px;
+}
+
+.question-text {
+    color: #333;
+
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    width: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.appeal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 332px;
+    margin: auto;
+    padding-top: 44px;
+}
+
+.appeal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.appeal-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    background: linear-gradient(92deg, #F1DB00 0%, #FFBC00 31.5%, #FFFFB1 67%, #FB0 100%);
+}
+
+.appeal-item span {
+    color: #333;
+
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.appeal-headline {
+    margin: auto;
+    color: #333;
+
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.recommendation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    gap: 102px;
+    min-height: 380px;
+}
+
+.recommendation-headline {
+    color: #333;
+    display: inline;
+    margin: 0 auto;
+
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.recommendation-content {
+    position: relative;
+}
+
+.recommendation-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recommendation-item p {
+    color: #333;
+
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 10;
+}
+
+.liquidation-sec {
+    background-color: #003064;
+}
+
+.liquidation-sec h2 {
+    padding: 40px 0;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.liquidation-sec h2, .liquidation-sec .question-headline, .liquidation-sec div.question-text, .liquidation-sec .appeal-headline, .liquidation-sec .recommendation-headline{
+    color: #FFFFFF;
+}
+
+
+.faq-button {
+    transform: rotate(-90deg);
+}
+
+.faq-button.open {
+    transform: rotate(0deg);
+}
+
+.answer {
+    display: none;
+}
+
+
+.faq-sec h2 {
+    margin: 20px auto 40px auto;
+    color: #333;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-item {
+    width: 477px;
+}
+
+.faq-content .faq-question {
+    padding: 20px;
+    background-color: #003064;
+    margin: auto;
+}
+
+.faq-content .answer {
+    padding: 20px;
+    background-color: #F0F0E6;
+    margin: auto;
+}
+
+.faq-content .answer-text {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    color: #333;
+
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.faq-content .faq-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    color: #FFFFFF;
+}
+
+.text-icon {
+    padding-right: 22px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 116.667% */
+}
+
+.company-overview-sec {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 22px;
+}
+
+.company-overview-title h2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 83.333% */
+}
+
+.company-overview-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #FFFFFF;
+    width: 320px;
+}
+
+.company-overview-item p {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+}
+
+.company-overview-item p:nth-child(2) {
+    width: 180px;
+}
+
+.otakara-text {
+    color: #CE2323;
+    font-family: "Noto Sans JP";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+span.red-text {
+    color: #CE2323;
+    font-family: "Noto Sans JP";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    vertical-align: bottom;
+}
+
+.gold_text {
+    background: linear-gradient(94deg, #F1DB00 0%, #FFBC00 10%, #FFFFB1 65%, #FB0 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Noto Sans JP";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.72px;
+}
+
+.faq-content .question-text {
+    width: 334px;
+    color: #333;
+
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.hukidashi-bg {
+    position: absolute;
+    bottom: -85px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.footer-fixation {
+    position: fixed;
+    bottom: 0;
+    width: 520px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.footer-fixation img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #AD0000;
+    padding: 27px 20px 150px 20px;
+}
+
+.footer-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.footer-r {
+    width: 167px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+}
+
+.footer-tel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+    color: #FFF;
+
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* .gold-h2-text {
+    -webkit-text-stroke-width: 2;
+    -webkit-text-stroke-color: #333;
+    font-family: "Noto Sans JP";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background: linear-gradient(91deg, #F1DB00 2.81%, #FFBC00 32.54%, #FFFFB1 66.04%, #FB0 97.19%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+@media screen and (max-width: 767px) {
+    .pc-inner {
+        width: 100%;
+    }
+
+    .purchaseList-content {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 40% 40%;
+        gap: 30px;
+        margin: auto;
+        margin-top: 36px;
+    }
+
+    .purchaseList-item-image {
+        width: 100%;
+    }
+
+    .purchaseList-item-text::after {
+        width: 18%;
+    }
+
+    .purchaseList-item-text::before {
+        width: 100%;
+    }
+
+    .menu__icon {
+        right: -2.2rem;
+    }
+
+    footer {
+        padding-bottom: 20vw;
+    }    
+    .footer-fixation {
+        width: 100%;
+    }
+}
