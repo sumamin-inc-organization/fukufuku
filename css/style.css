@@ -429,6 +429,7 @@ header {
     transition: 0.3s;
 }
 
+
 .faq-button.open {
     transform: rotate(0deg);
     transition: 0.3s;
@@ -604,6 +605,7 @@ span.red-text {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    z-index: 100;
 }
 
 .footer-fixation img {
