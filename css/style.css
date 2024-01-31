@@ -183,6 +183,7 @@ header {
     justify-content: center;
     position: relative;
     color: #FFF;
+    font-family: "Noto Sans JP";
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -324,8 +325,8 @@ header {
     content: "";
     top: 0px;
     left: 0px;
-    border-top: 25px solid transparent;
-    border-right: 25px solid #003064; /* ラベルの色はここで変更 */
+    border-top: 26px solid transparent;
+    border-right: 26px solid #003064; /* ラベルの色はここで変更 */
     position: absolute;
     z-index: 11;
 }
@@ -685,6 +686,7 @@ header {
     margin-top: 40px;
     margin-bottom: 50px;
     color: #FFFFFF;
+    font-family: "Noto Sans JP";
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -924,5 +926,9 @@ footer {
 
     .faq-text-main {
         min-width: 240px;
+    }
+
+    .present-cta {
+        width: 101%;
     }
 }
