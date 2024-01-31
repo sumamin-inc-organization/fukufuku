@@ -1,33 +1,3 @@
-@font-face {
-    font-family: "noto sans JP";
-    src: url("../fonts/NotoSansJP-Black.ttf") format("truetype");
-    font-weight: black;
-}
-
-@font-face {
-    font-family: "noto sans JP";
-    src: url("../fonts/NotoSansJP-ExtraBold.ttf") format("truetype");
-    font-weight: extraBold;
-}
-
-@font-face {
-    font-family: "noto sans JP";
-    src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "noto sans JP";
-    src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
-    font-weight: medium;
-}
-
-@font-face {
-    font-family: "noto sans JP";
-    src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
-    font-weight: regular;
-}
-
 * {
     font-family: "Noto Sans JP" sans-serif;
 }
@@ -65,6 +35,9 @@ header {
     width: 100%;
 }
 
+.banner-02:hover {
+    opacity: 0.8; filter: brightness(110%);
+}
 
 .pc-inner {
     width: 390px;
@@ -284,12 +257,14 @@ header {
 /*買取実績*/
 .purchaseAchievements-sec {
     background-color: #F0F0E6;
+    padding-bottom: 50px;
 }
 
 .purchaseAchievements-sec h2 {
     display: flex;
     justify-content: center;
     position: relative;
+    font-family: "Noto Sans JP";
     color: #003064;
     text-align: center;
     font-size: 36px;
@@ -297,6 +272,7 @@ header {
     font-weight: 900;
     line-height: normal;
     padding-bottom: 3px;
+    padding-top: 50px;
 }
 
 .purchaseAchievements-sec h2::after {
@@ -312,9 +288,14 @@ header {
     background: #003064;
 }
 
+.purchaseAchv-frame {
+    display: flex;
+    flex-direction: column;
+}
+
 .purchaseAchv-frame-title {
     background: #003064;
-    padding: 8px 52px 7px 52px;
+    padding: 8px 0px 7px 0px;
     color: #FFF;
     width: 224px;
 
@@ -325,19 +306,102 @@ header {
     font-weight: 700;
     line-height: normal;
     position: relative;
+    margin: 51px auto 25px auto;
 }
 
 .purchaseAchv-frame-title::before {
     content: "";
-    background-image: url(../images/Rectangle.png);
     top: 0;
     left: 0;
-    /* border-bottom: 25px solid transparent;
-    border-left: 25px solid #c12748; /* ラベルの色はここで変更 */
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #003064; /* ラベルの色はここで変更 */
+    border-image-source: linear-gradient(200deg, #D79627 12.71%, #FFF89B 49.48%, #FFC754 95.76%);
     position: absolute;
     z-index: 10;
-    width: 25px;
-    height: 25px;
+}
+
+.purchaseAchv-frame-title::after {
+    content: "";
+    top: 0px;
+    left: 0px;
+    border-top: 25px solid transparent;
+    border-right: 25px solid #003064; /* ラベルの色はここで変更 */
+    position: absolute;
+    z-index: 11;
+}
+
+.purchaseAchv-content-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0 0px;
+}
+
+.purchaseAchv-content {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 20px;
+}
+
+.purchaseAchv-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 2px solid #D79627;
+    border-image-source: linear-gradient( 135deg, #D79627, #FFF89B, #FFC754);
+    border-image-slice: 1;
+    box-shadow: 0px 4px 4px 0px #D8D0BD;
+    width: 224px;
+    min-width: 224px;
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.purchaseAchv-item img {
+    width: 160px;
+}
+
+.purchaseAchv-item-title {
+    margin-top: 20px;
+    color: #333;
+
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.purchaseAchv-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 13px;
+}
+
+.purchaseAchv-text-t {
+    color: #333;
+
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.purchaseAchv-text-b {
+    color: #CE2323;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .full-images {
@@ -484,7 +548,7 @@ header {
     font-family: "Noto Sans JP";
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     z-index: 10;
 }
@@ -494,13 +558,19 @@ header {
 }
 
 .liquidation-sec h2 {
-    padding: 40px 0;
+    padding: 40px 0 22px 0;
     text-align: center;
     font-family: "Noto Sans JP";
     font-size: 36px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+}
+
+.liquidation-sec img {
+    padding-right: 7px;
+    padding-bottom: 6px;
+    vertical-align: middle;
 }
 
 .liquidation-sec h2, .liquidation-sec .question-headline, .liquidation-sec div.question-text, .liquidation-sec .appeal-headline, .liquidation-sec .recommendation-headline{
@@ -549,6 +619,10 @@ header {
 .faq-text-main {
     display: flex;
     width: 253px;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 30px;
 }
 
@@ -576,6 +650,10 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 175% */
+}
+
+.faq-content .answer-text span {
+    font-family: "Noto Sans JP";
 }
 
 .faq-content .faq-text {
@@ -626,6 +704,7 @@ header {
 .company-overview-item p {
     color: #FFFFFF;
     font-size: 20px;
+    font-family: "Noto Sans JP";
     font-style: normal;
     font-weight: 500;
     line-height: 30px; /* 150% */
@@ -759,6 +838,15 @@ footer {
 } */
 
 @media screen and (max-width: 767px) {
+    header {
+        padding: 24px 20px 17px 20px;
+        height: 90px;
+        background-color: #AD0000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .pc-inner {
         width: 100%;
     }
@@ -789,9 +877,52 @@ footer {
     }
 
     footer {
-        padding-bottom: 20vw;
+        padding-bottom: 28vw;
     }    
     .footer-fixation {
         width: 100%;
+    }
+
+    .on-sitePurchase-content, .liquidation-content {
+        margin: auto 20px;
+    }
+
+    .sec-image {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .question-headline {
+        font-size: 22px;
+    }
+
+    .faq-content {
+        margin: auto 20px;
+    }
+
+    .faq-item {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .faq-text-main {
+        width: 60%;
+        min-width: 253px;
+        font-family: "Noto Sans JP";
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .purchaseList-item-text {
+        font-size: 14px;
+    }
+
+    .question-text {
+        font-size: 14px;
+    }
+
+    .faq-text-main {
+        min-width: 240px;
     }
 }

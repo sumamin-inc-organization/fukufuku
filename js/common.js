@@ -21,3 +21,11 @@ $(function() {
       $('.banner-03-clidren').slideToggle();
     });
   });
+
+
+window.onload = function(){
+  let scrollElm = document.getElementsByClassName( 'purchaseAchv-content-wrapper' );
+  for (var i=0; i < scrollElm.length; i++) {
+    scrollElm[i].scrollLeft = 191;
+  }
+}

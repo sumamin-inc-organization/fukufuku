@@ -11,7 +11,13 @@
         <meta property="og:title" content="ふく福ブランド買取">
         <meta property="og:site_name" content="ふく福ブランド買取">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <link rel="icon" href="images/fukufuku_favicon.svg" sizes="any"><!-- 32×32 -->
+        <link rel="icon" href="images/fukufuku_favicon.svg" type="image/svg+xml">
+        <link rel="manifest" href="/manifest.webmanifest">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/slick.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -50,9 +56,9 @@
                         <div class="banner-item banner-01">
                             <img src="images/banner_01.jpg" alt="">
                         </div>
-                        <div class="banner-item banner-02">
+                        <a href="#sitePurchase" class="banner-item banner-02">
                             <img src="images/banner_02.jpg" alt="">
-                        </div>
+                        </a>
                         <div class="banner-item banner-03">
                             <div class="banner-02-image">
                                 <img src="images/banner_03.jpg" alt="">
@@ -106,33 +112,192 @@
                         <h2>買取実績</h2>
                         <div class="purchaseAchv-frame">
                             <h3 class="purchaseAchv-frame-title">金・貴金属</h3>
-                            <div class="purchaseAchv-content">
-                                <div class="purchaseAchv-item">
-                                    <h4 class="purchaseAchv-item-title">ティファニー Tスマイル マイクロ</h4>
-                                    <img src="images/purchase_01.jpg" alt="ティファニー Tスマイル マイクロ">
-                                    <div class="purchaseAchv-text">
-                                        <p class="purchaseAchv-text-t">買取金額</p>
-                                        <p class="purchaseAchv-text-b">相場最高値</p>
+                            <div class="purchaseAchv-content-wrapper">
+                                <div class="purchaseAchv-content">
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ティファニー Tスマイル マイクロ</h4>
+                                        <img src="images/purchase_01.jpg" alt="ティファニー Tスマイル マイクロ">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">相場最高値</p>
+                                        </div>
                                     </div>
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">金インゴット</h4>
+                                        <img src="images/purchase_02.jpg" alt="金インゴット">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">相場最高値</p>
+                                        </div>
+                                    </div> 
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">おりん</h4>
+                                        <img src="images/purchase_03.jpg" alt="おりん">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">相場最高値</p>
+                                        </div>
+                                    </div> 
                                 </div>
-                                <div class="purchaseAchv-item">
-                                    <h4 class="purchaseAchv-item-title">金インゴット</h4>
-                                    <img src="images/purchase_02.jpg" alt="金インゴット">
-                                    <div class="purchaseAchv-text">
-                                        <p class="purchaseAchv-text-t">買取金額</p>
-                                        <p class="purchaseAchv-text-b">相場最高値</p>
-                                    </div>
-                                </div> 
-                                <div class="purchaseAchv-item">
-                                    <h4 class="purchaseAchv-item-title">おりん</h4>
-                                    <img src="images/purchase_03.jpg" alt="おりん">
-                                    <div class="purchaseAchv-text">
-                                        <p class="purchaseAchv-text-t">買取金額</p>
-                                        <p class="purchaseAchv-text-b">相場最高値</p>
-                                    </div>
-                                </div> 
                             </div>
                         </div>
+                        <div class="purchaseAchv-frame">
+                            <h3 class="purchaseAchv-frame-title">ダイヤ・宝石</h3>
+                            <div class="purchaseAchv-content-wrapper">
+                                <div class="purchaseAchv-content">
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ルビー リング</h4>
+                                        <img src="images/purchase_04.jpg" alt="ルビー リング">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥2,000,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ダイヤモンド<br>リング</h4>
+                                        <img src="images/purchase_05.jpg" alt="ダイヤモンドリング">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥2,000,000</p>
+                                        </div>
+                                    </div> 
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ブラック<br>オパール</h4>
+                                        <img src="images/purchase_06.jpg" alt="ブラックオパール">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥2,000,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">エメラルド<br>リング</h4>
+                                        <img src="images/purchase_07.jpg" alt="エメラルドリング">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥4,000,000</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="purchaseAchv-frame">
+                            <h3 class="purchaseAchv-frame-title">ブランド時計</h3>
+                            <div class="purchaseAchv-content-wrapper">
+                                <div class="purchaseAchv-content">
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ショパール<br>ハッピースポーツ</h4>
+                                        <img src="images/purchase_08.jpg" alt="ショパールハッピースポーツ">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥845,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ハリーウィンストン<br>プルミエール</h4>
+                                        <img src="images/purchase_09.jpg" alt="ハリーウィンストンプルミエール">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥1,160,000</p>
+                                        </div>
+                                    </div> 
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ハリーウィンストン<br>オーシャン</h4>
+                                        <img src="images/purchase_10.jpg" alt="ハリーウィンストンオーシャン">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥464,000</p>
+                                        </div>
+                                    </div> 
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ハリーウィンストン<br>アヴェニューCミニ</h4>
+                                        <img src="images/purchase_11.jpg" alt="ハリーウィンストンアヴェニューCミニ">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥916,000</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="purchaseAchv-frame">
+                            <h3 class="purchaseAchv-frame-title">ブランドバッグ</h3>
+                            <div class="purchaseAchv-content-wrapper">
+                                <div class="purchaseAchv-content">
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">セリーヌ ホリゾン<br>タルカバ　黒</h4>
+                                        <img src="images/purchase_12.jpg" alt="セリーヌ ホリゾンタルカバ　黒">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥63,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ルイヴィトンダミ<br>エ　ハムステッド</h4>
+                                        <img src="images/purchase_13.jpg" alt="ルイヴィトンダミエ　ハムステッド">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥69,000</p>
+                                        </div>
+                                    </div> 
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">ロエベ マドリード<br>ショルダーバッグ</h4>
+                                        <img src="images/purchase_14.jpg" alt="ロエベ マドリードショルダーバッグ">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥33,000</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="purchaseAchv-frame">
+                            <h3 class="purchaseAchv-frame-title">その他</h3>
+                            <div class="purchaseAchv-content-wrapper">
+                                <div class="purchaseAchv-content">
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">Martin  000-42EC</h4>
+                                        <img src="images/purchase_15.jpg" alt="Martin  000-42EC">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥350,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">寛永通宝</h4>
+                                        <img src="images/purchase_16.jpg" alt="寛永通宝">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">高価買取</p>
+                                        </div>
+                                    </div> 
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">花柄着物　青</h4>
+                                        <img src="images/purchase_17.jpg" alt="花柄着物　青">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">高価買取</p>
+                                        </div>
+                                    </div> 
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">【トレカ】ポケモンカード<br>リーリエ</h4>
+                                        <img src="images/purchase_18.jpg" alt="【トレカ】ポケモンカードリーリエ">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">¥1,200,000</p>
+                                        </div>
+                                    </div> 
+                                    <div class="purchaseAchv-item">
+                                        <h4 class="purchaseAchv-item-title">【金券】JTB旅行券</h4>
+                                        <img src="images/purchase_19.jpg" alt="【金券】JTB旅行券">
+                                        <div class="purchaseAchv-text">
+                                            <p class="purchaseAchv-text-t">買取金額</p>
+                                            <p class="purchaseAchv-text-b">最大93.8%</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        
                     </section>
                     <!-- ここから選ばれる理由 -->
                     <section class="reason-sec">
@@ -164,7 +329,7 @@
                         </div>
                     </div>
                     <!-- ここから出張買取 -->
-                    <section class="on-sitePurchase-sec">
+                    <section id="sitePurchase" class="on-sitePurchase-sec">
                         <h2><img src="images/shucchokaitori_h2.svg" alt=""></h2>
                         <div class="on-sitePurchase-content">
                             <img class="sec-image on-sitePurchase-image" src="images/shucchokaitori.jpg" alt="">
@@ -175,8 +340,8 @@
                             <div class="appeal">
                                 <h3 class="appeal-headline">ふく福の出張買取なら</h3>
                                 <div class="appeal-content">
-                                    <p class="appeal-item"><span>出張・査定料<span class="red-text">0</span>円</span></p>
-                                    <p class="appeal-item"><span>予約最短<span class="red-text">25</span>分</span></p>
+                                    <p class="appeal-item"><span style="padding-bottom: 8px;">出張・査定料<span class="red-text">0</span>円</span></p>
+                                    <p class="appeal-item"><span style="padding-bottom: 8px;">予約最短<span class="red-text">25</span>分</span></p>
                                     <p class="appeal-item"><span>即日現金化</span></p>
                                 </div>
                             </div>
@@ -212,7 +377,7 @@
                             <div class="appeal">
                                 <h3 class="appeal-headline">ふく福の生前・遺品整理なら</h3>
                                 <div class="appeal-content">
-                                    <div class="appeal-item"><span>買取手数料・査定料<span class="red-text">0</span>円</span></div>
+                                    <div class="appeal-item"><span style="padding-bottom: 8px;">買取手数料・査定料<span class="red-text">0</span>円</span></div>
                                     <div class="appeal-item"><span>出張買取・宅配も可！</span></div>
                                     <div class="appeal-item"><span>即日現金化可能</span></div>
                                 </div>
