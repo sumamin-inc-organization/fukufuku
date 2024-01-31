@@ -67,7 +67,7 @@ header {
 
 
 .pc-inner {
-    width: 520px;
+    width: 390px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -283,7 +283,61 @@ header {
 
 /*買取実績*/
 .purchaseAchievements-sec {
-    
+    background-color: #F0F0E6;
+}
+
+.purchaseAchievements-sec h2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #003064;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding-bottom: 3px;
+}
+
+.purchaseAchievements-sec h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    height: 4px;
+    width: 100px;
+    background: #003064;
+}
+
+.purchaseAchv-frame-title {
+    background: #003064;
+    padding: 8px 52px 7px 52px;
+    color: #FFF;
+    width: 224px;
+
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+}
+
+.purchaseAchv-frame-title::before {
+    content: "";
+    background-image: url(../images/Rectangle.png);
+    top: 0;
+    left: 0;
+    /* border-bottom: 25px solid transparent;
+    border-left: 25px solid #c12748; /* ラベルの色はここで変更 */
+    position: absolute;
+    z-index: 10;
+    width: 25px;
+    height: 25px;
 }
 
 .full-images {
@@ -489,14 +543,20 @@ header {
 }
 
 .faq-item {
-    width: 477px;
+    width: 350px;
 }
+
+.faq-text-main {
+    display: flex;
+    width: 253px;
+    line-height: 30px;
+}
+
 
 .faq-content .faq-question {
     padding: 20px;
     background-color: #003064;
     margin: auto;
-    cursor: pointer;
 }
 
 .faq-content .answer {
@@ -630,7 +690,7 @@ span.red-text {
 .footer-fixation {
     position: fixed;
     bottom: 0;
-    width: 520px;
+    width: 390px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -646,7 +706,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #AD0000;
-    padding: 27px 20px 150px 20px;
+    padding: 27px 20px 106px 20px;
 }
 
 .footer-upper {
