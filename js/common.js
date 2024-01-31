@@ -37,6 +37,10 @@ window.onload = function(){
     for (var i=0; i < scrollElm.length; i++) {
       scrollElm[i].scrollLeft = 191;
     }
+  } else if (window.matchMedia("(max-width: 414px)").matches) {
+    for (var i=0; i < scrollElm.length; i++) {
+      scrollElm[i].scrollLeft = 179;
+    }
   } else if (window.matchMedia("(max-width: 430px)").matches) {
     for (var i=0; i < scrollElm.length; i++) {
       scrollElm[i].scrollLeft = 172;
